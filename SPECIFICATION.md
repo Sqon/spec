@@ -47,6 +47,32 @@ File Contents
 
 ### Bootstrap Script
 
+The bootstrap script consists of up to three parts:
+
+1. The [shebang line][].
+2. The self extracting script.
+3. The "halt compiler" invocation.
+
+[shebang line]: https://en.wikipedia.org/wiki/Shebang_(Unix)
+
+#### Shebang Line
+
+The shebang line is optional but is recommended for applications that are intended to be executed from the command line. The default shebang line is:
+
+    #!/usr/bin/env php
+
+> The shebang line is followed by the line feed character ("\n", or ASCII `0xA`).
+
+This shebang line will allow users to change their environment to use a PHP interpeter other than their system default in order to run the application. It is also recommended that no additional options be passed in the shebang line as it may introduce [portability issues][].
+
+[portability issues]: https://en.wikipedia.org/wiki/Shebang_(Unix)#Portability
+
+#### Self Extracting Script
+
+TBD
+
+#### Halt Compiler Invocation
+
 TBD
 
 ### SQLite Database
