@@ -33,12 +33,12 @@ The data in the sqon file are arranged in the following order:
 | ?     | -        | The bootstrap script.                   |
 | ?     | -        | The SQLite database.                    |
 | ?     | -        | The signature of the file.              |
-| `4`   | `i`      | The offset of the file signature.       |
-| `4`   | `i`      | The offset of the SQLite database.      |
-| `4`   | `i`      | The size of the bootstrap script.       |
-| `4`   | `i`      | The size of the file signature.         |
-| `4`   | `i`      | The size of the SQLite database.        |
-| `4`   | `i`      | The algorithm for the file signature.   |
+| `4`   | `l`      | The offset of the file signature.       |
+| `4`   | `l`      | The offset of the SQLite database.      |
+| `4`   | `l`      | The size of the bootstrap script.       |
+| `4`   | `l`      | The size of the file signature.         |
+| `4`   | `l`      | The size of the SQLite database.        |
+| `4`   | `l`      | The algorithm for the file signature.   |
 
 [Pack]: http://php.net/pack
 
