@@ -61,7 +61,7 @@ The shebang line is optional but is recommended for applications that are intend
 
     #!/usr/bin/env php
 
-> The shebang line is followed by the line feed character ("\n", or ASCII `0xA`).
+> The shebang line is followed by the line feed character (`\n`, or ASCII `0xA`).
 
 This shebang line will allow users to change their environment to use a PHP interpeter other than their system default in order to run the application. It is also recommended that no additional options be passed in the shebang line as it may introduce [portability issues][].
 
